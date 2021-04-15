@@ -1,0 +1,16 @@
+﻿@using WebApplication2.Resources
+@inject LocService SharedLocalizer
+
+@{
+    ViewData["Title"] = @SharedLocalizer.GetLocalizedHtmlString("LOCKED_OUT");
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<header>
+    <h1>@ViewData["Title"]</h1>
+    <p class="text-danger">
+        @SharedLocalizer.GetLocalizedHtmlString("LOCKED_OUT_TEXT")
+    </p>
+</header>
+
+

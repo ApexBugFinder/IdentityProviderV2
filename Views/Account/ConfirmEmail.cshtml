@@ -1,0 +1,15 @@
+﻿@using WebApplication2.Resources
+@inject LocService SharedLocalizer
+@{ 
+    ViewData["Title"] = SharedLocalizer.GetLocalizedHtmlString("CONFIRM_EMAIL");
+}
+
+<h2>@ViewData["Title"]</h2>
+<div>
+    <p>
+        @SharedLocalizer.GetLocalizedHtmlString("CONFIRM_EMAIL_TEXT")
+    </p>
+</div>
+
+
+<partial name="_StatusMessage" model="Model.StatusMessage" />

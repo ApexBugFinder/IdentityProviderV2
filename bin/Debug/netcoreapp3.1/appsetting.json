@@ -1,0 +1,26 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "DefaultConnection": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=WebApplication2;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False",
+    "WebApplication2ContextConnection": "DataSource=WebApplication2.db"
+  },
+  "IdpConfig": {
+    "IdpServerIdentityUrl": "https://localhost:44314",
+    "recipeantwebuiUrl": "http://localhost:4200",
+    "recipeantwebapi":  "https://localhost:44353"
+  },
+  "UseLocalCertStore": "true",
+  "CertificateThumbprint": "20A892A1EE6939137BD482EA5FC538BC53EF59D6",
+
+  "EmailSettings": {
+    "SendGridApiKey": "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",
+    "SenderEmailAddress": "apexbugfinder@gmail.com"
+  }
+}
